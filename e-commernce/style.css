@@ -121,3 +121,81 @@ h4{
 .rating .fa{
     color:red;
 }
+/* -------footer----- */
+.footer{
+    background: #000;
+    color:#8a8a8a;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;  
+}
+.footer-col-1, .footer-col-2{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex-basis: 1;
+}
+
+/*----all products----- */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+
+}
+select{
+    border: 1px solid red;
+    padding: 5px;
+
+
+}
+select:focus{
+    outline: none;
+}
+
+/* -----single product------ */
+
+.single-product{
+    margin-top: 80px;
+
+}
+.single-product col-2 img{
+
+    padding: 0;
+
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    margin-top: 20px;
+    display: block;
+    padding: 10px;
+}
+.single-product input{
+
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid orange;
+
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24;
+    cursor: pointer;
+}
