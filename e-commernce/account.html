@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products- Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+        </div>
+    </div>
+
+    <!-- accounts-page -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span>Login</span>
+                        <!-- <span>Register</span> -->
+                    </div>
+                    <form id="form">
+                        <input type="text" id="username" placeholder="username">
+                        <input type="password" id="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Register</a>
+                    </form>
+                    <form action="">
+                        <input type="text" placeholder="username">
+                        <input type="password" placeholder="password">
+                        <input type="email" placeholder="email">
+                        <button type="submit" class="btn">Register</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    var form=document.getElementById('form')
+    let creds=[];
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault()
+        // var use=document.getElementById("username").value
+        // console.log(use)
+        // var password=document.getElementById('password').value
+        // console.log(password)
+        let cred={
+            user: document.getElementById('username').value,
+            pass: document.getElementById('password').value
+        }
+        creds.push(cred)
+        document.forms[0].reset()
+        localStorage.setItem('credetials list', JSON.stringify(creds))
+
+    })
+</script>
+</html> 
+
+
+
+        
+<!------- footer --------->
+    <!-- <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download App</h3>
+                    <p>Download for ios/andriod</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>our purpose is to be the best in market and make our customers happy</p>
+                </div>
+            </div>
+        </div>
+    </div>
